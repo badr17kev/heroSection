@@ -7,15 +7,15 @@ export default function Navbar() {
       <div className="brand-name">Prodgest<span>.</span></div>
       
       <div className="menu-links">
-        <a href="#">Solutions</a>
-        <a href="#">Inventory</a>
-        <a href="#">Sales</a>
-        <a href="#">Clients</a>
-        <a href="#">Pricing</a>
+        <button className="nav-link-button">Solutions</button>
+        <button className="nav-link-button">Inventory</button>
+        <button className="nav-link-button">Sales</button>
+        <button className="nav-link-button">Clients</button>
+        <button className="nav-link-button">Pricing</button>
       </div>
       
       <div className="user-actions">
-        <a href="#" className="login-link">Login</a>
+        <button className="login-link nav-link-button">Login</button>
         <button className="signup-button">Get Started</button>
       </div>
     </nav>
