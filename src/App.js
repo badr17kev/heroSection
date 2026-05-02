@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Hero />
+      
+      <footer style={{ 
+        padding: '60px 80px', 
+        textAlign: 'center', 
+        fontSize: '13px', 
+        color: '#a0a0a0',
+        background: '#f8f1e7'
+      }}>
+        © 2025 Prodgest. Managed with total clarity.
+      </footer>
     </div>
   );
 }
-
-export default App;

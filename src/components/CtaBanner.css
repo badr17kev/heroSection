@@ -1,0 +1,80 @@
+/* ── CTA Banner ── */
+.cta-banner {
+  display: flex;
+  margin: 0 80px 80px;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 280px;
+}
+
+/* Dark left panel */
+.cta-dark {
+  flex: 1.4;
+  background: #111827;
+  padding: 48px 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cta-dark-title {
+  font-size: 30px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.8px;
+  line-height: 1.2;
+  max-width: 360px;
+}
+
+.cta-dark-sub {
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  margin-top: 10px;
+  line-height: 1.65;
+  max-width: 380px;
+}
+
+/* Green right panel */
+.cta-green {
+  flex: 1;
+  background: var(--green-card);
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 14px;
+}
+
+.cta-green-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.cta-green-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+}
+
+.cta-green-desc {
+  font-size: 13.5px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.65;
+  max-width: 240px;
+}
+
+@media (max-width: 900px) {
+  .cta-banner {
+    flex-direction: column;
+    margin: 0 24px 56px;
+  }
+}

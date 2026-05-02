@@ -1,0 +1,70 @@
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 80px;
+  background: transparent;
+}
+
+.brand-name {
+  font-size: 22px;
+  font-weight: 900;
+  color: #1a1a1a;
+  letter-spacing: -1px;
+}
+
+.brand-name span {
+  color: #8a8a8a;
+  font-weight: 400;
+}
+
+.menu-links {
+  display: flex;
+  gap: 32px;
+}
+
+.menu-links a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.menu-links a:hover {
+  color: #000000;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.login-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.signup-button {
+  background: #232323;
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.signup-button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+  .header-nav { padding: 20px 40px; }
+  .menu-links { display: none; }
+}
