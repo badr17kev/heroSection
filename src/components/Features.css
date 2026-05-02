@@ -1,76 +1,79 @@
-/* ── Features ── */
-.features {
+.service-features {
+  padding: 100px 80px;
   background: #ffffff;
-  padding: 80px 80px;
-  border-top: 1px solid var(--border);
 }
 
-.features-header {
+.section-intro {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
-.features-title {
-  font-size: 30px;
+.intro-title {
+  font-size: 32px;
   font-weight: 800;
-  color: var(--text);
-  letter-spacing: -0.8px;
-  margin-bottom: 10px;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
 }
 
-.features-sub {
-  font-size: 15px;
-  color: var(--muted);
-  max-width: 380px;
+.intro-subtitle {
+  font-size: 16px;
+  color: #6b6b6b;
+  max-width: 600px;
   margin: 0 auto;
-  line-height: 1.65;
+  line-height: 1.6;
 }
 
-.features-grid {
+.features-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.feature-card {
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 24px 22px 28px;
-  transition: box-shadow 0.2s, transform 0.2s;
+.service-card {
+  padding: 40px;
+  background: #f9fafb;
+  border-radius: 16px;
+  transition: transform 0.2s;
 }
 
-.feature-card:hover {
-  box-shadow: 0 8px 32px rgba(0,0,0,0.07);
-  transform: translateY(-2px);
+.service-card:hover {
+  transform: translateY(-4px);
 }
 
-.feature-icon {
-  width: 38px;
-  height: 38px;
-  border-radius: 8px;
-  background: var(--green-light);
+.icon-wrapper {
+  width: 44px;
+  height: 44px;
+  background: #ffffff;
+  color: #1a1a1a;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--green);
-  margin-bottom: 14px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.feature-name {
-  font-size: 16px;
+.service-title {
+  font-size: 18px;
   font-weight: 700;
-  color: var(--text);
-  letter-spacing: -0.3px;
-  margin-bottom: 8px;
+  color: #1a1a1a;
+  margin-bottom: 12px;
 }
 
-.feature-desc {
+.service-text {
   font-size: 14px;
-  color: var(--muted);
-  line-height: 1.68;
+  color: #6b6b6b;
+  line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-  .features { padding: 56px 24px; }
-  .features-grid { grid-template-columns: 1fr; }
+@media (max-width: 900px) {
+  .features-container {
+    grid-template-columns: 1fr;
+  }
+  .service-features {
+    padding: 60px 40px;
+  }
 }
